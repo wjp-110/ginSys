@@ -29,7 +29,6 @@ func main() {
 		password := ctx.PostForm("password")
 		telephone := ctx.PostForm("telephone")
 
-		//fmt.Println(len("12345678911"))
 		//数据验证
 		if len(telephone) != 11 {
 			ctx.JSON(http.StatusUnprocessableEntity, gin.H{"code": 422, "msg": "手机号必须11位"})
