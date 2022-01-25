@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+//随机截取字符串n长度
 func RandomString(n int) string {
 	var letters = []byte("asvdgahahsbdagaskdashasdknjsal")
 	result := make([]byte, n)
